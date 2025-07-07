@@ -1,0 +1,39 @@
+.advantages {
+    margin-top: 5em;
+    margin-bottom: 5em;
+    .inner {
+        .advantages__section-title {
+            font-size: 2.5rem;
+        }
+        .advantages__list {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 1.25em;
+            .advantages__item {
+                border-radius: 20px;
+                border: 1px solid #926BF2;
+                padding: 1.75em 2.5em;
+                .advantages__pic {
+                    text-align: right;
+                    margin-bottom: 1.25em;
+                }
+                .advantages__title {
+                    font-size: 1.3rem;
+                    font-weight: 500;
+                    margin-bottom: 0.65em;
+                    max-width: 280px;
+                }
+            }
+            .advantages__item--wide {
+                grid-row: 1 / span 2;
+                background-repeat: no-repeat;
+                background-position: top center;
+                background-size: contain;
+                
+                display: flex;
+                justify-content: end;
+                flex-direction: column;
+            }
+        }
+    }
+}

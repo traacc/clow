@@ -1,0 +1,16 @@
+.solutions {
+    margin-top: 6em;
+    .inner {
+        display: flex;
+        justify-content: space-between;
+        .solutions__title {
+            font-size: 2.5rem;
+            flex-shrink: 0.6;
+        }
+        .solutions__text {
+            padding: 2.5em;
+            background-color: #FBFBFB;
+            border-radius: 30px;
+        }
+    }
+}

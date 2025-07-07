@@ -1,0 +1,50 @@
+.header {
+    .inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 1rem;
+        font-weight: 500;
+        padding-top: 2.2em;
+        
+        .header__services {
+            border: 1px solid #582BAF;
+            font-size: 1rem;
+            background-color: transparent;
+            border-radius: 100px;
+            padding: 0.7em 1.3em;
+            padding-left: 3em;
+
+            background-image: url(../assets/images/header/services_toggle.svg);
+            background-repeat: no-repeat;
+            background-position: 20% center;
+        }
+        .header__info {
+            padding-right: 1.5em;
+            text-decoration: none;
+            color: inherit;
+
+            background-image: url(../assets/images/icons/menu_arrow_down.svg);
+            background-repeat: no-repeat;
+            background-position: right center;
+        }
+        .header__phone {
+            background-image: url(../assets/images/icons/phone.svg);
+            background-repeat: no-repeat;
+            background-position: left center;
+
+            padding-left: 1.5em;
+        }
+        .header__login {
+            background-image: url(../assets/images/icons/login.svg);
+            background-repeat: no-repeat;
+            background-position: left center;
+
+            padding-left: 1.5em;
+        }
+    }
+}
+
+
+
+

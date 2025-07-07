@@ -1,0 +1,35 @@
+.reviews {
+    .reviews__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 2.5rem;
+        margin-bottom: 0.6em;
+    }
+    .reviews__list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .reviews__item {
+            padding: 1.5em 1.5em 0.5em 1.5em;
+            background-color: #fff;
+            border-radius: 30px;
+            .reviews__rating {
+                height: 22px;
+                width: 126px;
+                background-color: gray;
+                margin-bottom: 1.3em;
+            }
+            .reviews__text {
+                font-size: 0.7rem;
+                padding-bottom: 1.2em;
+                border-bottom: 1px solid #333;
+            }
+            .reviews__author {
+                font-size: 0.7rem;
+                font-weight: 700;
+                padding-top: 1em;
+            }
+        }
+    }
+}

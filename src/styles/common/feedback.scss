@@ -1,0 +1,16 @@
+.feedback {
+    .inner {
+        display: flex;
+        justify-content: space-between;
+        .feedback__form {
+            .feedback__form-row {
+                display: flex;
+
+            }
+            .feedback__form-group{
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    }
+}

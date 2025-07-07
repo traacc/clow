@@ -1,0 +1,72 @@
+.services{
+    padding-top: 8em;
+    .inner {
+        .services__section-title {
+            font-size: 2.5rem;
+        }
+        .services__list {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 1em;
+           
+            .services__item {
+                border-radius: 40px;
+                box-shadow: 0px 0px 40px 0px rgba(0,0,0,0.05);
+                padding: 35px 40px;
+                .services__header {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin-top: 1.1em;
+                    margin-bottom: 1.1em;
+                    min-height: 52px;
+                    .services__title {
+                        font-size: 1.3rem;
+                        max-width: 200px;
+                    }
+                    .services__price {
+                        background-color: #926BF2;
+                        color: #fff;
+                        font-size: 0.6rem;
+                        padding: 1.2em 2em;
+                        border-radius: 40px;
+                        flex-shrink: 0;
+                    }
+                }
+                .services__text {
+                    margin-bottom: 2em;
+                    min-height: 78px;
+                }
+                .services__btn {
+                    text-align: center;
+                }
+            }
+            .services__item--wide {
+                grid-column: 1 / span 3;
+                background-repeat: no-repeat;
+                background-position: center right;
+                .services__header {
+                    justify-content: flex-start;
+                    column-gap: 1.8em;
+                    min-height: unset;
+                    .services__title {
+                        font-size: 2rem;
+                        max-width: unset;
+                    }
+                    .services__price {
+                        font-size: 0.9rem;
+                        padding: 0.9em 1.8em;
+                        border-radius: 40px;
+                    }
+                }
+                .services__text {
+                    min-height: unset;
+                    max-width: 475px;
+                }
+                .services__btn {
+                    max-width: 354px;
+                }
+            }
+        }
+    }
+}

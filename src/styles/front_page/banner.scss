@@ -1,0 +1,22 @@
+.banner .inner {
+    display: flex;
+    background-color: #8C76EB;
+    color: #fff;
+    padding: 4em 3em;
+
+    border-radius: 40px;
+    background-repeat: no-repeat;
+    background-position: center right;
+    .banner__title {
+        font-size: 2.5rem;
+        max-width: 786px;
+        margin-bottom: 1em;
+    }
+    .banner__btn {
+        color: #fff;
+        border: 1px solid #fff;
+        max-width: 358px;
+        text-align: center;
+        padding: 0.8em 1.4em;
+    }
+}

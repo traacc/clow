@@ -1,0 +1,19 @@
+.faq .inner {
+    display: flex;
+    justify-content: space-between;
+    .faq__list{
+        background-color: #FBFBFB;
+        padding: 1.3em 2.2em;
+        border-radius: 20px;
+        .faq__item {
+            .faq__question {
+                color: #333333;
+                font-weight: 600;
+                font-size: 1.1rem;
+            }
+            .faq__answer {
+                font-size: 0.9rem;
+            }
+        }
+    }
+}
