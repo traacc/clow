@@ -17,7 +17,7 @@
             
             border-radius: 50px;
             .tariffs__price-item {
-                
+                cursor: pointer;
                 border-radius: 50px;
                 padding: 0.8em 1.6em;
                 &.active {
@@ -33,6 +33,20 @@
                 .tarrifs__service-switcher-item {
                     border-radius: 20px;
                     padding: 1em 0.5em 1em 1.7em;
+                    position: relative;
+                    cursor: pointer;
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        height: 100%;
+                        width: 1px;
+                        background-color: #E3DEFF;
+                        left: 0;
+                    }
+                    &.active::before {
+                        width: 2px;
+                        background-color: #582BAF;
+                    }
                     .title {
                         font-size: 1.3rem;
                         font-weight: 500;
@@ -66,6 +80,7 @@
                     border: 1px solid #E3DEFF;
                     background-color: #FBFBFB;
                     padding: 1.4em;
+
                     .taffif__title {
                         font-weight: 700;
                         font-size: 1.3rem;
@@ -90,20 +105,37 @@
                         padding-bottom: 1em;
                         .value {
                             font-weight: 700;
+                            min-width: 110px;
                         }
                         .label {
                             color: #A1A1AA;
                             font-size: 0.7rem;
-                            text-align: right;
+                            text-align: left;
                         }
                     }
                     ul.taffif__points {
                         color: #926BF2;
                         font-size: 0.7rem;
-                        list-style-type: none;
+                        list-style-image: url(../assets/images/icons/point.svg);
                         margin-top: 1em;
+                        padding-left: 2em;
                         li {
                             margin-bottom: 1em;
+                        }
+                    }
+                    .taffif__controls {
+                        display: flex;
+                        justify-content: space-between;
+                        & > * {
+                            padding: 1.15em 2.2em;
+                            line-height: 1;
+                        }
+                        .taffif__controls--months {
+                            font-size: 0.6rem;
+                            padding-right: 3em;
+                        }
+                        .taffif__controls--order{
+                            font-size: 0.7rem;
                         }
                     }
                 }

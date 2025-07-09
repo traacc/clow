@@ -8,6 +8,7 @@ import Tarrifs from './front_page/Tarrifs.vue'
 import Reviews from './front_page/Reviews.vue'
 import Faq from './components/Faq.vue'
 import Feedback from './components/Feedback.vue'
+import Footer from './components/Footer.vue'
 </script>
 
 <template>
@@ -31,6 +32,7 @@ import Feedback from './components/Feedback.vue'
     <Reviews />
     <Faq />
     <Feedback />
+    <Footer />
   </main>
 
 </template>

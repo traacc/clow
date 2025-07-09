@@ -1,15 +1,83 @@
 .feedback {
+    margin-top: 5em;
+    margin-bottom: 15em;
+    position: relative;
+    &::before {
+        content: '';
+        background: var(--gradient-1);
+        opacity: 0.2;
+        width: 900px;
+        height: 720px;
+        bottom: 20%;
+        left: 50%;
+        filter: blur(300px);
+    }
     .inner {
         display: flex;
         justify-content: space-between;
+        column-gap: 6em;
+        .feedback__section-title {
+            font-size: 2.5rem;
+        }
+        .feedback__left {
+            background-image: url(../assets/images/feedback/feedback_bg.png);
+            background-position: bottom left;
+            background-repeat: no-repeat;
+            height: 24em;
+            .feedback__subtitle {
+                max-width: 550px;
+                
+            }
+        }
         .feedback__form {
+            flex-shrink: 5;
+            flex-grow: 2;
+            max-width: 600px;
+            h3 {
+                font-size: 1.5rem;
+                margin-bottom: 0.6em;
+            }
             .feedback__form-row {
                 display: flex;
-
+                column-gap: 1em;
             }
             .feedback__form-group{
                 display: flex;
                 flex-direction: column;
+                margin-bottom: 1em;
+                label {
+                    color: #333333;
+                    font-size: 0.8rem;
+                    margin-bottom: 0.3125em;
+                }
+                input, textarea {
+                    border: 1px solid #D4D4D8;
+                    border-radius: 10px;
+                    padding: 1em 1.4em;
+                    font-weight: 300;
+                    font-size: 0.7rem;
+                    resize: none;
+                }
+                input {
+                    width: 280px;
+                }
+                textarea {
+                    height: 147px;
+                }
+            }
+            .feedback__form-privacy-note{
+                display: flex;
+                align-items: center;
+                column-gap: 1.5em;
+                font-size: 0.6rem;
+                padding-bottom: 1em;
+                padding-left: 2.3em;
+            }
+            .feedback__form-btn.btn {
+                border: none;
+                max-width: 100%;
+                width: 100%;
+                display: block;
             }
         }
     }

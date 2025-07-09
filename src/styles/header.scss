@@ -6,7 +6,12 @@
         font-size: 1rem;
         font-weight: 500;
         padding-top: 2.2em;
-        
+        .header__left, .header__right {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            column-gap: 3em;
+        }
         .header__services {
             border: 1px solid #582BAF;
             font-size: 1rem;
@@ -34,6 +39,7 @@
             background-position: left center;
 
             padding-left: 1.5em;
+            line-height: 1.1;
         }
         .header__login {
             background-image: url(../assets/images/icons/login.svg);

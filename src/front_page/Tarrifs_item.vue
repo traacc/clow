@@ -29,5 +29,9 @@ defineProps({
           <li>Помощь с установкой ПО</li>
           <li>Гибкое изменение конфигурации</li>
         </ul>
+        <div class="taffif__controls">
+          <div class="taffif__controls--months stoke-btn">1 месяц</div>
+          <div class="taffif__controls--order btn">Заказать</div>
+        </div>
     </div>
 </template>

@@ -2,7 +2,10 @@
     <section class="faq">
       <div class="container">
         <div class="inner">
-          <h2 class="faq__title section-title">Часто задаваемые <span>вопросы</span></h2>
+          <div class="faq__left">
+              <h2 class="faq__section-title section-title">Часто задаваемые <span>вопросы</span></h2>
+          </div>
+          
           <div class="faq__list">
             <div class="faq__item">
               <div class="faq__question">Как выбрать тарифный план?</div>

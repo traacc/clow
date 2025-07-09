@@ -1,7 +1,10 @@
 @use './reset.scss';
+
+@use './styles/site-main.scss';
+
 @use './styles/header.scss';
 
-@use './styles/front_page/main.scss';
+@use './styles/front_page/front-main.scss';
 @use './styles/front_page/hero.scss';
 @use './styles/front_page/services.scss';
 @use './styles/front_page/advantages.scss';
@@ -9,64 +12,7 @@
 @use './styles/front_page/solutions.scss';
 @use './styles/front_page/tarrifs.scss';
 @use './styles/front_page/reviews.scss';
+
 @use './styles/common/faq.scss';
 @use './styles/common/feedback.scss';
-
-@font-face {
-  font-family: "Mulish";
-  src: url(../fonts/Mulish-VariableFont_wght.ttf);
-}
-@font-face {
-  font-family: "Mulish";
-  font-style: italic;
-  src: url(../fonts/Mulish-Italic-VariableFont_wght.ttf);
-}
-
-:root {
-  --text-color: #333333;
-
-  font-family: "Mulish", system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: var(--text-color);
-  background-color: #fff;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-
-  font-size: 20px;
-
-}
-._hide {
-  display: none !important;
-}
-.container {
-  max-width: 1440px;
-  margin: 0 auto;
-}
-
-.btn {
-  background: linear-gradient(75deg,rgba(88, 43, 175, 1) 7%, rgba(95, 51, 183, 1) 25%, rgba(116, 74, 207, 1) 54%, rgba(146, 107, 242, 1) 100%);
-  color: #fff;
-  text-decoration: none;
-  border-radius: 36px;
-  padding: 0.8em 4.4em;
-  display: block;
-  max-width: 358px;
-  font-size: 1rem;
-
-  cursor: pointer;
-}
-
-.stoke-btn {
-  border: 1px solid rgba(88, 43, 175, 1);
-  color: #333333;
-  font-size: 1rem;
-  border-radius: 36px;
-  padding: 0.8em 4.4em;
-}
-
+@use './styles/footer.scss';

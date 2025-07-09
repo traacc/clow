@@ -1,0 +1,73 @@
+@font-face {
+  font-family: "Mulish";
+  src: url(../fonts/Mulish-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: "Mulish";
+  font-style: italic;
+  src: url(../fonts/Mulish-Italic-VariableFont_wght.ttf);
+}
+
+:root {
+  --text-color: #333333;
+
+  --purple-1: #582BAF;
+  --purple-2: #926BF2;
+  --purple-3: #E3DEFF;
+  --purple-4: #F8F6FF;
+
+  --white: #fff;
+
+  --gray-main: #FBFBFB;
+  --gray: #F3F3F3;
+  --gray-1: #F9FAFC;
+
+  --gradient: linear-gradient(75deg,rgba(88, 43, 175, 1) 7%, rgba(95, 51, 183, 1) 25%, rgba(116, 74, 207, 1) 54%, rgba(146, 107, 242, 1) 100%);
+  --gradient-1: linear-gradient(145deg,rgba(140, 118, 235, 1) 17%, rgba(212, 137, 217, 1) 45%, rgba(252, 224, 249, 1) 71%);
+
+  font-family: "Mulish", system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: var(--text-color);
+  background-color: #fff;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  font-size: 20px;
+
+}
+._hide {
+  display: none !important;
+}
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.btn {
+  background: linear-gradient(75deg,rgba(88, 43, 175, 1) 7%, rgba(95, 51, 183, 1) 25%, rgba(116, 74, 207, 1) 54%, rgba(146, 107, 242, 1) 100%);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 36px;
+  padding: 0.8em 4.4em;
+  display: block;
+  max-width: 358px;
+  font-size: 1rem;
+
+  cursor: pointer;
+}
+
+.stoke-btn {
+  border: 1px solid rgba(88, 43, 175, 1);
+  color: #333333;
+  font-size: 1rem;
+  border-radius: 36px;
+  padding: 0.8em 4.4em;
+
+  cursor: pointer;
+}
