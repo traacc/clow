@@ -6,8 +6,8 @@
   <link rel="icon" type="image/svg+xml" href="/clow/vite.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Vite App</title>
-  <script type="module" crossorigin src="/clow/assets/main-yL0VOTdm.js"></script>
-  <link rel="stylesheet" crossorigin href="/clow/assets/main-DdR2Ildp.css">
+  <script type="module" crossorigin src="/clow/assets/main-BfapJLNa.js"></script>
+  <link rel="stylesheet" crossorigin href="/clow/assets/main-PmRgLCPy.css">
 </head>
 
 <body>
@@ -29,7 +29,7 @@
     </div>
   </header>
     <main class="vds">
-        <section class="hero hero-domain">
+        <section class="hero hero--service">
             <div class="container">
                 <div class="inner">
                 <div class="hero__content">
@@ -45,7 +45,7 @@
                     <a href="#" class="btn">Выбрать тариф</a>
                 </div>
                 <div class="hero__pic">
-                    <img src="/clow/assets/hero_pic-DwjQSeBz.png" alt="">
+                    <img src="/src/assets/images/service/hero_pic.png" alt="">
                 </div>
                 </div>
             </div>
@@ -87,26 +87,28 @@
         <section class="calc">
             <div class="container">
                 <div class="inner">
+                    <h2 class="calc__section-title section-title">Конфигурации VDS-KVM</h2>
                     <div class="calc__configs">
-                        <div class="calc__configs-header">
-                            <div class="calc__configs-regions">
-                                <div class="item active">
-                                    <img src="" alt="">
-                                    <div class="title">Россия MSK</div>
-                                </div>
-                                <div class="item">
-                                    <img src="" alt="">
-                                    <div class="title">Нидерланды</div>
-                                </div>
-                            </div>
-                            <div class="calc__configs-price">
-                                <div class="calc__configs-price-item active">За час</div>
-                                <div class="calc__configs-price-item">За месяц</div>
-                                <div class="calc__configs-price-item">За год</div>
-                            </div>
-                        </div>
+
                         <div class="calc__configs-wrapper">
                             <div class="calc__configs-table">
+                                <div class="calc__configs-header">
+                                    <div class="calc__configs-regions">
+                                        <div class="item active">
+                                            <img src="data:image/svg+xml,%3csvg%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M24%2017.9997C24%2018.7069%2023.719%2019.3852%2023.219%2019.8853C22.7189%2020.3854%2022.0406%2020.6663%2021.3333%2020.6663H2.66667C1.95942%2020.6663%201.28115%2020.3854%200.781049%2019.8853C0.280952%2019.3852%200%2018.7069%200%2017.9997V15.333H24V17.9997Z'%20fill='%23CE2028'/%3e%3cpath%20d='M0%208.66699H24V15.3337H0V8.66699Z'%20fill='%2322408C'/%3e%3cpath%20d='M21.3333%203.33301H2.66667C1.95942%203.33301%201.28115%203.61396%200.781049%204.11406C0.280952%204.61415%200%205.29243%200%205.99967L0%208.66634H24V5.99967C24%205.29243%2023.719%204.61415%2023.219%204.11406C22.7189%203.61396%2022.0406%203.33301%2021.3333%203.33301Z'%20fill='%23F5F5F5'/%3e%3c/svg%3e" alt="">
+                                            <div class="title">Россия MSK</div>
+                                        </div>
+                                        <div class="item">
+                                            <img src="data:image/svg+xml,%3csvg%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M0%209.33301H24V14.6663H0V9.33301Z'%20fill='%23F5F5F5'/%3e%3cpath%20d='M21.3333%203.33301H2.66667C1.95942%203.33301%201.28115%203.61396%200.781049%204.11406C0.280952%204.61415%200%205.29243%200%205.99967L0%209.33301H24V5.99967C24%205.29243%2023.719%204.61415%2023.219%204.11406C22.7189%203.61396%2022.0406%203.33301%2021.3333%203.33301Z'%20fill='%23AE1F28'/%3e%3cpath%20d='M2.66667%2020.667H21.3333C22.0406%2020.667%2022.7189%2020.386%2023.219%2019.8859C23.719%2019.3858%2024%2018.7076%2024%2018.0003V14.667H0V18.0003C0%2018.7076%200.280952%2019.3858%200.781049%2019.8859C1.28115%2020.386%201.95942%2020.667%202.66667%2020.667Z'%20fill='%2320478B'/%3e%3c/svg%3e" alt="">
+                                            <div class="title">Нидерланды</div>
+                                        </div>
+                                    </div>
+                                    <div class="calc__configs-price">
+                                        <div class="calc__configs-price-item active">За час</div>
+                                        <div class="calc__configs-price-item">За месяц</div>
+                                        <div class="calc__configs-price-item">За год</div>
+                                    </div>
+                                </div>
                                 <div class="row">
                                     <div class="item item-cpu">
                                         <div class="value">1 ядро</div>
@@ -177,41 +179,48 @@
                             <div class="calc__configs-desc">
                                 <div class="calc__configs-desc-group">
                                     <h3>В стоимость включено</h3>
-                                    <div class="calc__configs-desc-group-list">
+                                    <div class="calc__configs-desc-group-list calc__configs-desc-group-list--includes">
                                         <div class="calc__configs-desc-group-item">
-                                            <img src="" alt="">
-                                            <p>Удобная панель управления сервером</p>
+                                            <div class="wrapper">
+                                                <img src="data:image/svg+xml,%3csvg%20width='33'%20height='32'%20viewBox='0%200%2033%2032'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M4%2015.5C11.7584%2018.1182%2013.8808%2020.2416%2016.5%2028C19.1182%2020.2416%2021.2416%2018.1182%2029%2015.5C21.2416%2012.8808%2019.1182%2010.7584%2016.5%203C13.8808%2010.7584%2011.7584%2012.8808%204%2015.5Z'%20fill='%23E3DEFF'/%3e%3c/svg%3e" alt="">
+                                                <p>Удобная панель управления сервером</p>
+                                            </div>
                                         </div>
                                         <div class="calc__configs-desc-group-item">
-                                            <img src="" alt="">
-                                            <p>Круглосуточный мониторинг</p>
+                                            <div class="wrapper">
+                                                <img src="data:image/svg+xml,%3csvg%20width='33'%20height='32'%20viewBox='0%200%2033%2032'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20clip-path='url(%23clip0_1546_3854)'%3e%3cpath%20d='M27.9995%204.12695V28.9998C21.0964%2028.9998%2015.5%2023.4318%2015.5%2016.5639C15.5%209.69586%2021.0954%204.12695%2027.9995%204.12695Z'%20fill='%23E3DEFF'/%3e%3cpath%20d='M15.4995%2016.4359C15.4995%2023.3039%209.90311%2028.8718%203%2028.8718V4C9.90311%204%2015.4995%209.56791%2015.4995%2016.4359Z'%20fill='%23E3DEFF'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_1546_3854'%3e%3crect%20width='25'%20height='25'%20fill='white'%20transform='translate(3%204)'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e" alt="">
+                                                <p>Круглосуточный мониторинг</p>
+                                            </div>
                                         </div>
                                         <div class="calc__configs-desc-group-item">
-                                            <img src="" alt="">
-                                            <p>Управление DNS</p>
+                                            <div class="wrapper">
+                                                <img src="data:image/svg+xml,%3csvg%20width='33'%20height='32'%20viewBox='0%200%2033%2032'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20clip-path='url(%23clip0_1546_3870)'%3e%3cpath%20d='M3%2011.981L5.1235%208.50792L13.3797%2013.0279V4H17.6203V13.0279L25.8765%208.50792L28%2011.981L19.7449%2016.5L28%2021.02L25.8765%2024.4931L17.6203%2019.9721V29H13.3797V19.9721L5.1235%2024.4931L3%2021.02L11.2551%2016.5L3%2011.981Z'%20fill='%23E3DEFF'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_1546_3870'%3e%3crect%20width='25'%20height='25'%20fill='white'%20transform='translate(3%204)'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e" alt="">
+                                                <p>Управление DNS</p>
+                                            </div>
+
                                         </div>
                                     </div>
                                 </div>
-                                <div class="calc__configs-desc-group">
+                                <div class="calc__configs-desc-group calc__configs-desc-group-list--addition">
                                     <h3>Дополнительные возможности:</h3>
                                     <div class="calc__configs-desc-group-list">
                                         <div class="calc__configs-desc-group-item">
                                             <div class="wrapper">
-                                                <img src="" alt="">
+                                                <img src="data:image/svg+xml,%3csvg%20width='33'%20height='32'%20viewBox='0%200%2033%2032'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20clip-path='url(%23clip0_1546_3844)'%3e%3cpath%20d='M16.5527%2015.5518C17.8228%2042.9125%2043.9135%2016.8218%2016.5527%2015.5518V15.5518Z'%20fill='%23E3DEFF'/%3e%3cpath%20d='M16.5527%2015.4465C17.8228%20-11.9142%2043.9135%2014.1765%2016.5527%2015.4465V15.4465Z'%20fill='%23E3DEFF'/%3e%3cpath%20d='M16.4475%2015.5518C-10.9133%2016.8218%2015.1775%2042.9125%2016.4475%2015.5518V15.5518Z'%20fill='%23E3DEFF'/%3e%3cpath%20d='M16.4475%2015.4465C-10.9133%2014.1765%2015.1775%20-11.9142%2016.4475%2015.4465V15.4465Z'%20fill='%23E3DEFF'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_1546_3844'%3e%3crect%20width='25'%20height='25'%20fill='white'%20transform='translate(4%203)'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e" alt="">
                                                 <p>Дополнительный ip адрес</p>
                                             </div>
                                             <div class="calc__configs-desc-group-price">200 ₽ / мес</div>
                                         </div>
                                         <div class="calc__configs-desc-group-item">
                                             <div class="wrapper">
-                                                <img src="" alt="">
+                                                <img src="data:image/svg+xml,%3csvg%20width='25'%20height='25'%20viewBox='0%200%2025%2025'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20clip-path='url(%23clip0_1629_6017)'%3e%3cpath%20d='M24.9614%2025C24.9871%2024.5363%2025%2024.0675%2025%2023.6078C25%2010.5899%2014.5311%200%201.66429%200C1.11283%200%200.552453%200.0190304%200%200.0570913L0.579185%208.74599C0.940557%208.72196%201.3049%208.70893%201.66429%208.70893C9.78476%208.70893%2016.3914%2015.3926%2016.3914%2023.6078C16.3914%2023.9123%2016.3825%2024.2137%2016.3667%2024.5152L24.9614%2025Z'%20fill='%23E3DEFF'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_1629_6017'%3e%3crect%20width='25'%20height='25'%20fill='white'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e" alt="">
                                                 <p>Резервное копирование</p>
                                             </div>
                                             <div class="calc__configs-desc-group-price">от 200 ₽ / мес</div>
                                         </div>
                                         <div class="calc__configs-desc-group-item">
                                             <div class="wrapper">
-                                                <img src="" alt="">
+                                                <img src="data:image/svg+xml,%3csvg%20width='30'%20height='30'%20viewBox='0%200%2030%2030'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20clip-path='url(%23clip0_1629_6020)'%3e%3cpath%20d='M14.9994%205.41869C20.283%205.41869%2024.5813%209.71698%2024.5813%2015.0006C24.5813%2020.2842%2020.283%2024.5825%2014.9994%2024.5825C9.71578%2024.5825%205.41749%2020.2842%205.41749%2015.0006C5.41749%209.71698%209.71699%205.41869%2014.9994%205.41869ZM14.9994%200C6.71518%200%200%206.71518%200%2014.9994C0%2023.2836%206.71518%2029.9988%2014.9994%2029.9988C23.2836%2029.9988%2029.9988%2023.2836%2029.9988%2014.9994C29.9988%206.71518%2023.2836%200%2014.9994%200Z'%20fill='%23E3DEFF'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_1629_6020'%3e%3crect%20width='30'%20height='30'%20fill='white'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e" alt="">
                                                 <p>Лицензия ISP manager</p>
                                             </div>
                                             <div class="calc__configs-desc-group-price">от 200 ₽ / мес</div>   
@@ -262,7 +271,7 @@
                                     </div>
                                 </div>
                                 <div class="calc__settings-row">
-                                    <div class="calc__settings-group">
+                                    <div class="calc__settings-group calc__settings-group--wide">
                                         <div class="calc__settings-group-header">
                                             <label for="">Дисковое пространство</label>
                                             <div class="input-wrapper"><input type="text"><label for="">ГБ</label></div>
@@ -287,22 +296,27 @@
                             <div class="calc__setup-conf">
                                 <div class="calc__setup-item">
                                     <div class="label">Кол-во ядер</div>
-                                    <div class="value">16 ядер</div>
+                                    <div class="value-wrapper"><div class="value">16</div> <div class="unit">ядер</div></div>
                                 </div>
                                 <div class="calc__setup-item">
                                     <div class="label">Оперативная память</div>
-                                    <div class="value">1 ГБ</div>
+                                    <div class="value-wrapper"><div class="value">1</div> <div class="unit">ГБ</div></div>
                                 </div>
                                 <div class="calc__setup-item">
                                     <div class="label">Дисковое пространство</div>
-                                    <div class="value">10 ГБ</div>
+                                    <div class="value-wrapper"><div class="value">10</div> <div class="unit">ГБ</div></div>
                                 </div>
                                 <div class="calc__setup-settings">
-                                    <div class="calc__setup-price-changer"></div>
+                                    <div class="calc__setup-price-changer-wrapper">
+                                        <div class="price-label">в день</div>
+                                        <label  class="calc__setup-price-changer"><input type="checkbox"><span class="slider round"></span></label >
+                                        <div class="price-label">в месяц</div>
+                                    </div>
+                                    
                                     <div class="calc__setup-price">7 ₽</div>
                                 </div>
                                 <div class="calc__setup-footer">
-                                    <button class="calc__setup-order-btn">оформить заказ</button>
+                                    <button class="calc__setup-order-btn stoke-btn">оформить заказ</button>
                                 </div>
                             </div>
                         </div>
@@ -364,7 +378,7 @@
         <section class="adv--vds">
             <div class="container">
                 <div class="inner">
-                    <div class="section-title">Преимущества аренды VDS у нас</div>
+                    <div class="section-title ml">Преимущества аренды VDS у нас</div>
                     <div class="adv__list">
                         <div class="adv__item">
                             <div class="adv__header">
