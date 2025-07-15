@@ -6,8 +6,8 @@
   <link rel="icon" type="image/svg+xml" href="/clow/vite.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Vite App</title>
-  <script type="module" crossorigin src="/clow/assets/main-9wfktTaG.js"></script>
-  <link rel="stylesheet" crossorigin href="/clow/assets/main-c2myGBbl.css">
+  <script type="module" crossorigin src="/clow/assets/main-NghC_ZF0.js"></script>
+  <link rel="stylesheet" crossorigin href="/clow/assets/main-TEupcQeD.css">
 </head>
 
 <body>
@@ -56,13 +56,16 @@
                     <h2 class="section-title names__section-title">Регистрация и проверка доменного имени</h2>
                     <div class="names__search">
                         <input type="text" class="names__input" placeholder="ИМЯ ДОМЕНА">
-                        <button class="btn names__search">проверить</button>
+                        <button class="btn names__search-btn">
+                          <div class="text">проверить</div>
+                          <div class="icon"><svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.5 1C14.5 0.723858 14.2761 0.5 14 0.5C13.7239 0.5 13.5 0.723858 13.5 1H14.5ZM0.646447 11.6464C0.451184 11.8417 0.451184 12.1583 0.646447 12.3536L3.82843 15.5355C4.02369 15.7308 4.34027 15.7308 4.53553 15.5355C4.7308 15.3403 4.7308 15.0237 4.53553 14.8284L1.70711 12L4.53553 9.17157C4.7308 8.97631 4.7308 8.65973 4.53553 8.46447C4.34027 8.2692 4.02369 8.2692 3.82843 8.46447L0.646447 11.6464ZM14 1H13.5V9H14H14.5V1H14ZM11 12V11.5H1V12V12.5H11V12ZM14 9H13.5C13.5 10.3807 12.3807 11.5 11 11.5V12V12.5C12.933 12.5 14.5 10.933 14.5 9H14Z" fill="white"/></svg></div>
+                        </button>
                     </div>
                     <table class="names__table">
                         <thead>
                             <tr>
                                 <th>домен</th>
-                                <th>статус</th>
+                                <th class="status">статус</th>
                                 <th>цена</th>
                                 <th></th>
                             </tr>
@@ -71,25 +74,25 @@
                         <tbody>
                             <tr>
                                 <td>aaa.ru</td>
-                                <td>недоступен</td>
+                                <td class="status">недоступен</td>
                                 <td></td>
                                 <td></td>
                             </tr>
                             <tr>
                                 <td>aaa.ru</td>
-                                <td>доступен</td>
+                                <td class="status">доступен</td>
                                 <td>330 ₽</td>
                                 <td class="register"><a href="#">зарегистрировать</a></td>
                             </tr>
                             <tr>
                                 <td>aaa.ru</td>
-                                <td>доступен</td>
+                                <td class="status">доступен</td>
                                 <td>330 ₽</td>
                                 <td class="register"><a href="#">зарегистрировать</a></td>
                             </tr>
                             <tr>
                                 <td>aaa.ru</td>
-                                <td>доступен</td>
+                                <td class="status">доступен</td>
                                 <td>330 ₽</td>
                                 <td class="register"><a href="#">зарегистрировать</a></td>
                             </tr>
@@ -140,7 +143,7 @@
                             <div class="price">150 ₽/год</div>
                         </div>
                         <div class="domains__item domains__item--no-border">
-                            <a href="#">полный список<br>доменных зон</a>
+                            <a href="#">полный список <br>доменных зон</a>
                         </div>
                     </div>
                 </div>
